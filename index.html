@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="logo-div">
+    <img src="images/logo.svg" alt="" class="logo">
+  </div>
+    <div class="main-div">
+      <div class="set-price-div">
+        <div class="bill-div">
+          <p class="bill">Bill</p>
+          <input type="text" class="inp-text" id="inp-bill" name="inp-bill" placeholder="0">
+          <img src="images/icon-dollar.svg" alt="" class="dollar-sign">
+        </div>
+        <div class="tips-div">
+          <p class="tip-text">Select Tip %</p>
+          <div class="btn-div tip">
+          <div class="btn-tip tip">5%</div>
+          <div class="btn-tip tip">10%</div>
+          <div class="btn-tip tip">15%</div>
+          <div class="btn-tip tip">25%</div>
+          <div class="btn-tip tip">50%</div>
+          <input class="inp-text custom" type="text" name="inp-tip" id="inp-tip" placeholder="Custom">
+        </div>
+        </div>
+        <div class="people-div">
+          <p class="people">Number of People</p>
+          <div class="error-msg">Can't be zero</div>
+          <input class="inp-text" type="text" name="inp-people" id="inp-people" placeholder="0">
+          <img src="images/icon-person.svg" alt="" class="people-sign">
+        </div>
+      </div>
+      <div class="result-div">
+        <div class="tip-amount-div">
+          <p class="result-text">Tip Amount</p>
+          <p class="desc">/ person</p>
+          <div class="value">$0.00</div>
+        </div>
+        <div class="total-amount-div">
+          <p class="result-text">Total</p>
+          <p class="desc">/ person</p>
+          <div class="value">$0.00</div>
+        </div>
+        <div class="btn-reset reset">Reset</div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
